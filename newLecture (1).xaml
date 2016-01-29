@@ -1,0 +1,18 @@
+﻿<Window x:Class="gestionNotes.NewLecture"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:gestionNotes"
+        mc:Ignorable="d"
+        Title="newLecture" Height="235.106" Width="277.66">
+    <Grid>
+        <StackPanel Margin="38,51,44,54">
+            <TextBlock Text="New lecture name" />
+            <TextBox x:Name="lectureName" />
+            <TextBlock Text="New lecture weight" />
+        </StackPanel>
+        <Slider x:Name="slider" HorizontalAlignment="Left" Margin="58,111,0,0" VerticalAlignment="Top" Width="130" Value="1"/>
+
+    </Grid>
+</Window>

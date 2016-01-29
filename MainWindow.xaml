@@ -1,0 +1,36 @@
+﻿<Window x:Class="gradesManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:gradesManager"
+        xmlns:self="clr-namespace:gradesManager"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800">
+    <ScrollViewer>
+        <DockPanel LastChildFill="False">
+        <StackPanel Name="v_stack">
+            <Menu DockPanel.Dock="Top">
+                    <MenuItem Header="_File" Width="40">
+                        <MenuItem Header="_New" Click="mnuNew_Click"/>
+                        <MenuItem Header="_Open" Click="mnuOpen_Click"/>
+                        <MenuItem Header="_Save" Click="mnuSave_Click"/>
+                        <Separator />
+                        <MenuItem Header="_Exit" Click="mnuExit_Click"/>
+                    </MenuItem>
+                    <MenuItem Header="_Tools">
+                        <MenuItem Header="_Refresh" Click="mnuRefresh_Click" />
+                        <MenuItem Header="_Load Model DLM I" Click="mnuLoadModelDLM1_Click" />
+                        <MenuItem Header="_Load Model DLM III" Click="mnuLoadModelDLM3_Click" />
+                        <MenuItem Header="_Add Module" Click="mnuAddModule_Click" />
+                    </MenuItem>
+                    <MenuItem Header="_Help">
+                        <MenuItem Header="_About" Click="mnuHelp_Click" />
+                        <MenuItem Header="_Readme" Click="mnuReadme_Click" />
+                    </MenuItem>
+                </Menu>
+            <WrapPanel Name="studyYears" DockPanel.Dock="Left" />
+        </StackPanel>
+        </DockPanel>
+    </ScrollViewer>
+</Window>
